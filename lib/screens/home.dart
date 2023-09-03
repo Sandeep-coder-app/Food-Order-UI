@@ -1,7 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:food_order_ui/screens/kitchens.dart';
 import 'package:food_order_ui/utils/constants.dart';
+
+import 'Ads.dart';
+import 'categories.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -38,9 +42,9 @@ class _HomePageState extends State<HomePage> {
             child: Expanded(
               child: ListView(
                 children: [
-                  // Ads(),
-                  // Categories(),
-                  // Kitchens(),
+                   Ads(),
+                   Categories(),
+                   Kitchens(),
                 ],
               ),
             ),
